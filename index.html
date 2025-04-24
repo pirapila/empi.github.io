@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selamat Ulang Tahun!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f3f3;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #ff4081;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #333;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 24px;
+      color: #4caf50;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday! 🎉</h1>
+  <p>Tekan tombol di bawah ini untuk melihat pesan spesial 🎁</p>
+  <button onclick="tampilkanUcapan()">Lihat Pesan</button>
+
+  <div id="message"></div>
+
+  <script>
+    function tampilkanUcapan() {
+      const pesan = "Semoga hari ulang tahunmu dipenuhi dengan kebahagiaan, tawa, dan cinta! 🎂✨";
+      const elemenPesan = document.getElementById("message");
+      elemenPesan.innerText = pesan;
+      elemenPesan.style.display = "block";
+    }
+  </script>
+</body>
+</html>
